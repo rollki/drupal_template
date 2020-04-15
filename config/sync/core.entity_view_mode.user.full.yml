@@ -1,0 +1,12 @@
+uuid: fb0d1fa7-1775-4b5c-9b1a-0777a1cbfc7e
+langcode: en
+status: false
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: mQIF_foYjmnVSr9MpcD4CTaJE_FpO1AyDd_DskztGhM
+id: user.full
+label: 'User account'
+targetEntityType: user
+cache: true
