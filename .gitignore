@@ -1,6 +1,9 @@
 #/web/sites/*/settings*.php
 /web/sites/*/services*.yml
 
+# Ignore *.sql files
+*.sql
+
 # Ignore paths that contain user-generated content.
 /web/sites/*/files
 /web/sites/*/private
