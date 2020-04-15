@@ -1,0 +1,25 @@
+name: profit4u
+recipe: drupal8
+
+config:
+  webroot: web
+  via: nginx
+  php: 7.3
+  xdebug: true
+
+services:
+  appserver:
+    build:
+      - composer install
+    overrides:
+      environment:
+        DRUSH_OPTIONS_URI: "http://profit4u.lndo.site"
+  mailhog:
+    type: mailhog
+    hogfrom:
+      - appserver
+    portforward: 1026
+
+proxy:
+  mailhog:
+    - mail.drupal8.lndo.site
