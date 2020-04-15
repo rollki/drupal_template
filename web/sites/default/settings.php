@@ -765,4 +765,13 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
+
 $settings['config_sync_directory'] = '../config/sync';
+
+$settings['trusted_host_patterns'] = [
+  '^profit4u.lndo.site$',
+  '^example\.com$',
+  '^.+\.example\.com$',
+  '^example\.org$',
+  '^.+\.example\.org$',
+];
