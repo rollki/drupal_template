@@ -769,7 +769,7 @@ $databases['default']['default'] = array (
 $settings['config_sync_directory'] = '../config/sync';
 
 $settings['trusted_host_patterns'] = [
-  '^profit4u.lndo.site$',
+  '^drupal_template.lndo.site$',
   '^example\.com$',
   '^.+\.example\.com$',
   '^example\.org$',

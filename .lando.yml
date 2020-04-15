@@ -1,4 +1,4 @@
-name: profit4u
+name: drupal_template
 recipe: drupal8
 
 config:
@@ -13,7 +13,7 @@ services:
       - composer install
     overrides:
       environment:
-        DRUSH_OPTIONS_URI: "http://profit4u.lndo.site"
+        DRUSH_OPTIONS_URI: "http://drupal_template.lndo.site"
   mailhog:
     type: mailhog
     hogfrom:

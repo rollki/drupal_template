@@ -4,11 +4,7 @@ After that you can start an app in cloned project:
 ```
 lando start
 ```
-Next step is to launch script with project installation:
-```
-lando ssh
-bash scripts/site-install-via-lando.sh
-```
+Then `composer install` and after that manually install site
 And voila - the project is installed. You can find urls to the site, by typing command:
 ```
 lando info
